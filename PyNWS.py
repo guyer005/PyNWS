@@ -55,7 +55,7 @@ countrys = []
 
 for i in range(len(cities)):
 #for i in range(len(cities)):
-    if i > 0 and i % 50 == 0:
+    if i > 0 and i % 59 == 0:
         print("Pausing for one minute to not exceed the API Call Limit")
         time.sleep(60)
     path = f"http://api.openweathermap.org/data/2.5/weather?q={cities[i]}&APPID={api_key}"
